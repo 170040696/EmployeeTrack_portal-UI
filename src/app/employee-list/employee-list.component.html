@@ -1,0 +1,49 @@
+<body style="background-color: mediumorchid;">
+
+  <h2 style="text-align: center;">Employee list</h2>
+
+  <table class="table table-striped" style="margin: 40px auto; width: 70%;">
+    <thead>
+      <tr>
+        <th>
+          First Name
+          <mat-form-field appearance="fill" style="height: 65px;">
+            <mat-label>Search First Name</mat-label>
+            <input matInput type="text" placeholder="Type something.." [(ngModel)]="searchforfirstname"
+              (input)="applyFilter()">
+          </mat-form-field>
+        </th>
+        <th>
+          Last Name
+          <mat-form-field appearance="fill" style="height: 65px;">
+            <mat-label>Search Last Name</mat-label>
+            <input matInput type="text" placeholder="Type something.." [(ngModel)]="searchforlastname"
+              (input)="applyFilter()">
+          </mat-form-field>
+        </th>
+        <th>
+          Email id
+          <mat-form-field appearance="fill" style="height: 65px;">
+            <mat-label>Search Email id</mat-label>
+            <input matInput type="text" placeholder="Type something.." [(ngModel)]="searchforemailid"
+              (input)="applyFilter()">
+          </mat-form-field>
+        </th>
+
+        <th>Actions</th>
+        <th>Actions</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employe of filtereddata">
+        <td>{{employe.firstname}}</td>
+        <td>{{employe.lastname}}</td>
+        <td>{{employe.emailid}}</td>
+        <td><button (click)="updateemploy(employe.id)" class="btn btn-info">Update</button></td>
+        <td><button (click)="Deleteemploy(employe.id)" class="btn btn-info">Delete</button></td>
+        <td><button (click)="Viewemploy(employe.id)" class="btn btn-info">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>

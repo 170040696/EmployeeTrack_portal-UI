@@ -1,0 +1,33 @@
+<body>
+  <div class="col-md-6 offset-md-4">
+    <h2>Create Employee</h2>
+    <form (ngSubmit)="onSubmit()" class="square-box">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" id="firstname" [(ngModel)]="employe.firstname" name="Firstname"
+          placeholder="Enter employee first name here" required>
+        <div style="color: red" *ngIf="employeefirstname">
+          <p>Employee first name should not be empty</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" id="lastname" [(ngModel)]="employe.lastname" name="lastname"
+          placeholder="Enter employee last name here" required>
+        <div style="color: red;" *ngIf="employeelastname">
+          <p>Employee Last name should not be empty</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Id</label>
+        <input type="text" class="form-control" id="Emailid" [(ngModel)]="employe.emailid" name="emailid"
+          placeholder="Enter employee emailid here" required>
+        <div style="color: red;" *ngIf="employeeemailid">
+          <p>Employee emaild id should not be empty</p>
+        </div>
+      </div><br>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+  </div>
+</body>

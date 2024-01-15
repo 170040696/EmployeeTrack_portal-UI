@@ -1,0 +1,23 @@
+<body>
+  <div class="square-box">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Enter employee Id here</label>
+        <input type="number" class="form-control" id="employeeId" [(ngModel)]="employeeId"
+          [ngModelOptions]="{standalone: true}">
+      </div>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+    <div *ngIf="employeedetails">
+      <h2>Employee Details</h2>
+      <p><strong>First Name:</strong> {{ employeedetails.firstname }}</p>
+      <p><strong>Last Name:</strong> {{ employeedetails.lastname }}</p>
+      <p><strong>Email id:</strong> {{ employeedetails.emailid }}</p>
+    </div>
+
+    <div *ngIf="noemployees">
+      <p>No employee is available for the entered employee id {{ employeeId }}</p>
+    </div>
+  </div>
+</body>

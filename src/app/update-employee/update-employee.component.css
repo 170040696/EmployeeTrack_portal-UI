@@ -1,0 +1,18 @@
+.square-box {
+  width: 600px;
+  height: 450px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+input {
+  width: 400px;
+}
+
+body {
+  background-color: mediumorchid;
+}

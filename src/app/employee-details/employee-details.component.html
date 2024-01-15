@@ -1,0 +1,26 @@
+<body>
+    <div class="col-md-6 offset-md-4">
+        <h3>View Employee Details</h3>
+        <form class="square-box">
+            <div>
+                <label>First Name</label>
+                <input type="text" class="form-control" id="firstname" [(ngModel)]="employe.firstname" name="Firstname"
+                    placeholder=" employee first name" readonly>
+
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" id="lastname" [(ngModel)]="employe.lastname" name="lastname"
+                    placeholder="employe last name" readonly>
+
+            </div>
+            <div class="form-group">
+                <label>Email Id</label>
+                <input type="text" class="form-control" id="Emailid" [(ngModel)]="employe.emailid" name="emailid"
+                    placeholder="employee email id" readonly>
+
+            </div>
+
+        </form>
+    </div>
+</body>

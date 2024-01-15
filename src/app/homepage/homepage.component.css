@@ -1,0 +1,70 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    width: 300px;
+    padding: 40px 60px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border-radius: '2px';
+    padding: '2px';
+    background-color: aqua; 
+  } */
+
+/* .square-form {
+    width: 600px; /* Adjust the width of the form as needed */
+/* height: 450px; /* Set the height equal to the width to make it square */
+/* background-color: #e0f7fa; /* Light blue background color */
+/* border-radius: 8px; /* Rounded corners */
+/* padding: 20px; /* Padding for the form */
+/* align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }  */
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: mediumorchid;
+}
+
+.square-box {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+button {
+  width: 300px;
+  padding: 40px 60px;
+  font-size: 20px;
+  margin: 10px;
+}

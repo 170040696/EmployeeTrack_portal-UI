@@ -13,5 +13,4 @@ logout() {
   this.authservice.logout();
   this.route.navigate(['/login']);
 }
-
 }

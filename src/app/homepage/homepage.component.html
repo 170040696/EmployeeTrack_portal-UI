@@ -1,12 +1,3 @@
-<!-- <div class="form-container" > -->
-<!-- <form class="square-form">
-    <div class="button-container"><br><br><br><br><br>
-        <button class="button" mat-raised-button color="primary"><a routerLink="employees" routerLinkActive="active" class="nav-link">Employee-list</a> </button><br>
-        <button class="button" mat-raised-button color="primary"><a routerLink="create-employee" routerLinkActive="active" class="nav-link">Create Employee</a></button><br>
-        <button class="button" mat-raised-button color="primary"> <a routerLink="Get-employeebyId" routerLinkActive="active" class="nav-link">Get Employee ById</a></button>
-    </div></form> -->
-<!-- </div> -->
-
 
 
 <!DOCTYPE html>
@@ -20,15 +11,24 @@
 </head>
 
 <body>
-  <div class="square-box">
-    <button class="button" mat-raised-button color="primary"><a routerLink="employees" routerLinkActive="active"
-        class="nav-link">Employee-list</a> </button><br>
-    <button class="button" mat-raised-button color="primary"><a routerLink="create-employee" routerLinkActive="active"
-        class="nav-link">Create Employee</a></button><br>
-    <button class="button" mat-raised-button color="primary"> <a routerLink="Get-employeebyId" routerLinkActive="active"
-        class="nav-link">Get Employee ById</a></button>
+<div class="home-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="sidebar-title">EMS Dashboard</h2>
+    <nav>
+      <a routerLink="employees" routerLinkActive="active">View Employees</a>
+      <a routerLink="create-employee" routerLinkActive="active">Create Employee</a>
+      <a routerLink="get-employee-by-id" routerLinkActive="active">Get Employee By ID</a>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </nav>
+  </aside>
 
-  </div>
+  <!-- Main content area -->
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
 </body>
 
 </html>

@@ -18,5 +18,8 @@ export class EmployeeDetailsComponent implements OnInit {
       this.employe = data;
     }, error => console.log(error));
   }
-
+  onSubmit() {
+    //console.log(this.employe);
+    this.router.navigate(['/employees']);
+  }
 }

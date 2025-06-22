@@ -1,7 +1,7 @@
 <body>
     <div class="col-md-6 offset-md-4">
         <h3>View Employee Details</h3>
-        <form class="square-box">
+        <form (ngSubmit)="onSubmit()" class="square-box">
             <div>
                 <label>First Name</label>
                 <input type="text" class="form-control" id="firstname" [(ngModel)]="employe.firstname" name="Firstname"
@@ -20,7 +20,7 @@
                     placeholder="employee email id" readonly>
 
             </div>
-
+            <button class="btn btn-success" type="submit">Back</button>
         </form>
     </div>
 </body>
